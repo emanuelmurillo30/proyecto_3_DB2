@@ -1,0 +1,356 @@
+{
+	"info": {
+		"_postman_id": "bc1883e2-7301-4838-824f-41efacef0c60",
+		"name": "API banco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7130471"
+	},
+	"item": [
+		{
+			"name": "SQL",
+			"item": [
+				{
+					"name": "transacciones",
+					"item": [
+						{
+							"name": "transaccion usuario",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|hFCDkE0kR3vF9Up5gLa0OH77P4uL7nz97VciETeR",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/transaccion",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"transaccion"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Retiro",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/withdrawal",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"withdrawal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deposito",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/deposit",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"deposit"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "auth",
+					"item": [
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"adriandmc05@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "usuario",
+					"item": [
+						{
+							"name": "Agregar personas",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\": \"Jose\",\r\n    \"last_name\": \"Figueroa\",\r\n    \"telefono\": \"04245632154\",\r\n    \"email\": \"jose.figueroa@gmail.com\",\r\n    \"password\": \"654123\",\r\n    \"tipo_cuenta\": \"corriente\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/user",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete persona",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/user/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get personas",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/users",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mongo",
+			"item": [
+				{
+					"name": "Crear Usuario/Cuenta",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"nombre\": \"Luisana\",\r\n        \"apellido\": \"Mora\",\r\n        \"numero_documento\": \"v-29781365\"\r\n    },\r\n    {\r\n        \"nombre\": \"Maria\",\r\n        \"apellido\": \"Chaparro\",\r\n        \"numero_documento\": \"v-29123456\"\r\n    },\r\n    {\r\n        \"nombre\": \"Manuel\",\r\n        \"apellido\": \"Chaparro\",\r\n        \"numero_documento\": \"v-24781279\"\r\n    },\r\n    {\r\n        \"nombre\": \"Emanuel\",\r\n        \"apellido\": \"Murillo\",\r\n        \"numero_documento\": \"v-26102033\"\r\n    },\r\n        {\r\n        \"nombre\": \"Neira\",\r\n        \"apellido\": \"Moncada\",\r\n        \"numero_documento\": \"v-5683805\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/crear_persona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"crear_persona"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deposito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "//Cambiar los numeros de cuenta a aquellos existentes en la base de datos\r\n{\r\n    \"transacciones\": [\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"monto\": 900\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva8\",\r\n            \"monto\": 150\r\n        },\r\n                {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva4\",\r\n            \"monto\": 1000\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva5\",\r\n            \"monto\": 2000\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva6\",\r\n            \"monto\": 3450\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva4\",\r\n            \"monto\": 1268\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva8\",\r\n            \"monto\": 584\r\n        },\r\n                {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva6\",\r\n            \"monto\": 1250\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva5\",\r\n            \"monto\": 2024\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"monto\": 650\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/transacciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"transacciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retiro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "//Cambiar los numeros de cuenta a aquellos existentes en la base de datos\r\n\r\n{\r\n    \"transacciones\": [\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"monto\": 651\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva8\",\r\n            \"monto\": 104\r\n        },\r\n                {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva4\",\r\n            \"monto\": 564\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva5\",\r\n            \"monto\": 852\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva6\",\r\n            \"monto\": 964\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva4\",\r\n            \"monto\": 537\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva8\",\r\n            \"monto\": 656\r\n        },\r\n                {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva6\",\r\n            \"monto\": 120\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva5\",\r\n            \"monto\": 125\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"monto\": 358\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/transacciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"transacciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transferencias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "//Cambiar los numeros de cuenta a aquellos existentes en la base de datos\r\n\r\n{\r\n    \"transacciones\": [\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva4\",\r\n            \"monto\": 900\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva6\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva7\",\r\n            \"monto\": 150\r\n        },\r\n                {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva5\",\r\n            \"monto\": 1000\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva4\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva6\",\r\n            \"monto\": 2000\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva5\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva8\",\r\n            \"monto\": 345\r\n        },\r\n               {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva5\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva4\",\r\n            \"monto\": 852\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva4\",\r\n            \"monto\": 521\r\n        },\r\n                {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva8\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva6\",\r\n            \"monto\": 1051\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva6\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva7\",\r\n            \"monto\": 625\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva8\",\r\n            \"monto\": 2102\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/transacciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"transacciones"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
