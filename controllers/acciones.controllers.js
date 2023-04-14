@@ -37,20 +37,6 @@ accionesCtrl.crearPersona = async(req, res) => {
     res.send(req.body)
 }
 
-accionesCtrl.deposito = async(req, res) => {
-    for(const deposito of req.body.depositos){
-
-    }
-}
-
-accionesCtrl.retiro = async(req, res) => {
-
-}
-
-accionesCtrl.transferencia = async(req, res) => {
-
-}
-
 accionesCtrl.transacciones = async(req, res) => {
     let consultas = [], consultasReceptor = [];
     for(const transaccion of req.body.transacciones){
@@ -65,6 +51,7 @@ accionesCtrl.transacciones = async(req, res) => {
                 monto: transaccion.monto
             })
             await transaccionAux.save()
+            console.log(transaccion.numero_cuenta)
             let cuenta = await cuentaModel.findOne({numero_cuenta: transaccion.numero_cuenta})
             let persona = await personaModel.findOne({numero_documento: cuenta.numero_documento})
             await cuentaModel.findOneAndUpdate({numero_cuenta: transaccion.numero_cuenta}, 
@@ -169,6 +156,24 @@ accionesCtrl.transacciones = async(req, res) => {
     respuesta.consultasReceptor = consultasReceptor;
     res.send(respuesta)
     
+}
+
+accionesCtrl.obtenerTransacciones = async(req, res) =>{
+    let cuenta = await cuentaModel.findOne({numero_documento: req.query.numero_documento})
+    let persona = await personaModel.findOne({numero_documento: req.query.numero_documento})
+        let cuentaInfo = await transaccionesModel.find({numero_cuenta: cuenta.numero_cuenta, tipo: 'transferencia'})
+        let transferencias = []
+
+        for(const transferencia of cuentaInfo){
+            transferencias.push({
+                "Propietario": persona.nombre,
+                "Nro de Cuenta": transferencia.numero_cuenta,
+                "Monto": transferencia.monto,
+                "Fecha": transferencia.fecha
+            })
+        }
+
+        res.send(transferencias)
 }
 
 module.exports = accionesCtrl;

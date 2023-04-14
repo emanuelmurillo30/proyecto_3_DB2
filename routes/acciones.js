@@ -9,16 +9,10 @@ router.route('/index')
 router.route('/crear_persona')
             .post(ctrlAcciones.crearPersona)
             
-router.route('/deposito')
-            .post(ctrlAcciones.deposito)
-
-router.route('/retiro')
-            .post(ctrlAcciones.retiro)
-            
-router.route('/transferencia')
-            .post(ctrlAcciones.transferencia)
-
 router.route('/transacciones')
             .post(ctrlAcciones.transacciones)
+            
+router.route('/transferencia')
+            .get(ctrlAcciones.obtenerTransacciones)
 
 module.exports = router;

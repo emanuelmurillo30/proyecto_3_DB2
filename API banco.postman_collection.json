@@ -273,7 +273,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "//Cambiar los numeros de cuenta a aquellos existentes en la base de datos\r\n{\r\n    \"transacciones\": [\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"monto\": 900\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva8\",\r\n            \"monto\": 150\r\n        },\r\n                {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva4\",\r\n            \"monto\": 1000\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva5\",\r\n            \"monto\": 2000\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva6\",\r\n            \"monto\": 3450\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva4\",\r\n            \"monto\": 1268\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva8\",\r\n            \"monto\": 584\r\n        },\r\n                {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva6\",\r\n            \"monto\": 1250\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva5\",\r\n            \"monto\": 2024\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"monto\": 650\r\n        }\r\n    ]\r\n}",
+							"raw": "//Cambiar los numeros de cuenta a aquellos existentes en la base de datos\r\n{\r\n    \"transacciones\": [\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bw\",\r\n            \"monto\": 900\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bm\",\r\n            \"monto\": 150\r\n        },\r\n                {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bu\",\r\n            \"monto\": 1000\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bx\",\r\n            \"monto\": 2000\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bv\",\r\n            \"monto\": 3450\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bw\",\r\n            \"monto\": 1268\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bv\",\r\n            \"monto\": 584\r\n        },\r\n                {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bu\",\r\n            \"monto\": 1250\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bx\",\r\n            \"monto\": 2024\r\n        },\r\n        {\r\n            \"tipo\": \"deposito\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bm\",\r\n            \"monto\": 650\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -301,7 +301,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "//Cambiar los numeros de cuenta a aquellos existentes en la base de datos\r\n\r\n{\r\n    \"transacciones\": [\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"monto\": 651\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva8\",\r\n            \"monto\": 104\r\n        },\r\n                {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva4\",\r\n            \"monto\": 564\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva5\",\r\n            \"monto\": 852\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva6\",\r\n            \"monto\": 964\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva4\",\r\n            \"monto\": 537\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva8\",\r\n            \"monto\": 656\r\n        },\r\n                {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva6\",\r\n            \"monto\": 120\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva5\",\r\n            \"monto\": 125\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"monto\": 358\r\n        }\r\n    ]\r\n}",
+							"raw": "//Cambiar los numeros de cuenta a aquellos existentes en la base de datos\r\n{\r\n    \"transacciones\": [\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bw\",\r\n            \"monto\": 616\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bm\",\r\n            \"monto\": 552\r\n        },\r\n                {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bu\",\r\n            \"monto\": 945\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bx\",\r\n            \"monto\": 163\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bv\",\r\n            \"monto\": 845\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bw\",\r\n            \"monto\": 1652\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bv\",\r\n            \"monto\": 763\r\n        },\r\n                {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bu\",\r\n            \"monto\": 985\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bx\",\r\n            \"monto\": 620\r\n        },\r\n        {\r\n            \"tipo\": \"retiro\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bm\",\r\n            \"monto\": 463\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -329,7 +329,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "//Cambiar los numeros de cuenta a aquellos existentes en la base de datos\r\n\r\n{\r\n    \"transacciones\": [\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva4\",\r\n            \"monto\": 900\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva6\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva7\",\r\n            \"monto\": 150\r\n        },\r\n                {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva5\",\r\n            \"monto\": 1000\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva4\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva6\",\r\n            \"monto\": 2000\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva5\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva8\",\r\n            \"monto\": 345\r\n        },\r\n               {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva5\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva4\",\r\n            \"monto\": 852\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva4\",\r\n            \"monto\": 521\r\n        },\r\n                {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva8\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva6\",\r\n            \"monto\": 1051\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva6\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva7\",\r\n            \"monto\": 625\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb9l9glgepjva7\",\r\n            \"numero_cuenta_receptor\": \"1r1vb9l9glgepjva8\",\r\n            \"monto\": 2102\r\n        }\r\n    ]\r\n}",
+							"raw": "//Cambiar los numeros de cuenta a aquellos existentes en la base de datos\r\n\r\n{\r\n    \"transacciones\": [\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bm\",\r\n            \"numero_cuenta_receptor\": \"1r1vb99hslgg158bu\",\r\n            \"monto\": 900\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bu\",\r\n            \"numero_cuenta_receptor\": \"1r1vb99hslgg158bx\",\r\n            \"monto\": 150\r\n        },\r\n                {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bv\",\r\n            \"numero_cuenta_receptor\": \"1r1vb99hslgg158bw\",\r\n            \"monto\": 1000\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bu\",\r\n            \"numero_cuenta_receptor\": \"1r1vb99hslgg158bv\",\r\n            \"monto\": 2000\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bx\",\r\n            \"numero_cuenta_receptor\": \"1r1vb99hslgg158bv\",\r\n            \"monto\": 345\r\n        },\r\n               {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bx\",\r\n            \"numero_cuenta_receptor\": \"1r1vb99hslgg158bm\",\r\n            \"monto\": 852\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bw\",\r\n            \"numero_cuenta_receptor\": \"1r1vb99hslgg158bu\",\r\n            \"monto\": 521\r\n        },\r\n                {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bv\",\r\n            \"numero_cuenta_receptor\": \"1r1vb99hslgg158bx\",\r\n            \"monto\": 1051\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bw\",\r\n            \"numero_cuenta_receptor\": \"1r1vb99hslgg158bm\",\r\n            \"monto\": 625\r\n        },\r\n        {\r\n            \"tipo\": \"transferencia\",\r\n            \"numero_cuenta\": \"1r1vb99hslgg158bm\",\r\n            \"numero_cuenta_receptor\": \"1r1vb99hslgg158bv\",\r\n            \"monto\": 2102\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -345,6 +345,43 @@
 							"port": "3000",
 							"path": [
 								"transacciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Transferencias",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/transferencia?numero_documento=v-24781279",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"transferencia"
+							],
+							"query": [
+								{
+									"key": "numero_documento",
+									"value": "v-24781279"
+								}
 							]
 						}
 					},
